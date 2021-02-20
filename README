@@ -1,0 +1,37 @@
+PROJECT 3 - KERNEL MODULE PROGRAMMING - COP4610
+GROUP MEMBERS:	- Roberto Mora
+
+
+DUE DATE: MARCH 15, 2019
+
+-----------------------------
+Part 1: System Call Tracing
+
+Files:			
+				- Makefile
+				- part1.c (where we create the syscalls)
+				
+Our program writes the 6 system calls that have to be added in. Works fine.
+
+-----------------------------
+Part 2: Kernel Module
+
+Files:			
+				- Makefile
+				- my_xtime.c (module with proc read)
+
+We are able to successfully initiate the module, and print the current time and 
+time passed since the last call successfully. Works fine.
+
+-----------------------------
+Part 3: Elevator Scheduler
+
+Files: 			
+				- Makefile
+				- wrapper.c (wrapper file for start elevator, issue request, and stop elevator)
+				- elevator_move.c (elevator scheduling implementation)
+				- init.c (initializes, exits, and writes necessary output to kernel module)
+
+Issue(s):
+Elevator does not pick up passengers from floor 1 and 10 only when 
+direction is switched. Other than this, no other known bugs.
